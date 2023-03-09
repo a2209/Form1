@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>FORM</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Form</h2>
+            <div id="error_message"></div>
+            <form id="myform" onsubmit="return validation()">
+                <div class="input">
+                    <label for="source">Select your source:</label>
+                    <input type="text" placeholder="Source" id="source" required>
+                </div>
+                <div class="input">
+                    <label for="pipeline">Provide a name for pipeline:</label>
+                    <input type="text" id="pipeline" required>
+                </div>
+                <div class="input">
+                    <label for="project">GCS project name:</label>
+                    <input type="text" id="project" required>
+                </div>
+                <div class="input">
+                    <label for="bucket">GCS bucket name:</label>
+                    <input type="text" id="bucket" required>
+                </div>
+                <div class="input">
+                    <label for="file">Input Cloud Storage File(s):</label>
+                    <input type="text" id="file" required>
+                </div>
+                <div class="input">
+                    <label for="credential">GCS credentials:</label>
+                    <input type="text" id="credential" required>
+                </div>
+                <div class="input">
+                    <label for="time">Run Every:</label>
+                    <input type="time" min="1" placeholder="minutes" id="time">
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Create">
+                    <input type="reset" value="Cancel">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

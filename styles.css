@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+body{
+    background: #fecefe;
+}
+.container{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 400px;
+    width: 100%; 
+    background: #6de3f0 ;
+    border-radius: 40px;
+    box-shadow: 4px 4px 2px rgba(254,236,164,1);
+
+}
+.container .btn input[type ="submit"]{
+    border: 10;
+    margin-top: 15px;
+    padding:5px ;
+    width: 30%;
+    border-radius: 20px;
+    right: 20%;
+    
+}
+.container .btn input[type="reset"]{
+    border: 10;
+    margin-top: 10px;
+    padding: 5px;
+    width: 30%;
+    border-radius:20px ;
+}
+.container h2{
+
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(4, 5, 64, 0.267)
+}
+.container input{
+
+    margin-bottom: 10px;
+}
+
+.container .input input[type="text"]
+.container Source{
+
+    color: black;
+}
+
+.container .button style{
+
+    background: #9077c2;
+}
+
+.container #error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
